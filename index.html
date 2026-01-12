@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blox's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body class="dark-mode"></body>
+    <!-- Theme toggle -->
+    <button id="theme-toggle">🌙</button>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Blox</h1>
+            <p>Portfolio | Developer | Designer</p>
+        </div>
+    </header>
+
+    <!-- Tools / Tech Stack -->
+    <section id="tools">
+        <div class="container">
+            <h2>Tools & Languages</h2>
+            <div class="icons-wrapper">
+                <!-- Add your icons here -->
+                <img src="assets/icons/cpp.png" alt="C++">
+                <img src="assets/icons/python.png" alt="Python">
+                <img src="assets/icons/lua.png" alt="Lua">
+                <img src="assets/icons/ghidra.png" alt="Ghidra">
+                <!-- Add more as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">—
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+            Hi! I’m a high school programmer and game developer passionate about creating systems that feel intuitive, responsive, and fun. I love exploring the intersection of code, design, and user experience, whether that’s building a fluid parkour and climbing system in Roblox, adding time-aligned subtitles to classic games with C++ and Python, or experimenting with machine learning to process large amounts of data. My projects often combine reverse engineering, algorithm design, and thoughtful interface work to turn complex ideas into polished, interactive experiences. I’m always excited to tackle challenging problems, learn new tools, and collaborate with others to make creative ideas come to life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Work</h2>
+        <div class="projects-container">
+            <!-- Project 1 -->
+            <div class="project-card-full collapsed">
+                <div class="project-header-full">
+                    <h3>SubtitleSynchAC1</h3>
+                    <button class="expand-btn" aria-expanded="false">▼</button>
+                </div>
+                <div class="project-content">
+                    <p><strong>Technologies:</strong> C++, Python</p>
+                    <video controls autoplay muted loop poster="assets/videos/poster1.png">
+                        <source src="assets/videos/subtitles.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>
+                        Developed a C++ .asi plugin adding fully time-aligned subtitles to Assassin's Creed I.<br>
+                        Automated transcription of 2,000+ voice lines using Python and Whisper, exporting structured JSON with timing metadata.<br>
+                        Hooked internal game functions to synchronize subtitle display with audio playback and animation duration.<br>
+                        Parsed proprietary font files to calculate glyph metrics and dynamically size subtitle boxes for consistent on-screen layout.
+                    </p>
+                    <div class="additional-videos">
+                        <!-- Add more videos here -->
+                        <video controls autoplay muted loop poster="assets/videos/poster1-2.png" style="margin-top: 1rem;">
+                            <source src="assets/videos/envy.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card-full collapsed">
+                <div class="project-header-full">
+                    <h3>AC1Tweaker</h3>
+                    <button class="expand-btn" aria-expanded="false">▼</button>
+                </div>
+                <div class="project-content">
+                    <p><strong>Technologies:</strong> C++</p>
+                    <img src="assets/images/patch.png" alt="AC1Tweaker - LOD Patch on">
+                    <p>
+                        Created a mod exposing hidden engine settings such as FOV, free cam, load distance, and time scale.<br>
+                        Reverse engineered undocumented systems using static analysis and runtime hooks to modify behavior safely.
+                    </p>
+                    <div class="additional-videos">
+                        <!-- Add more images here -->
+                        <img src="assets/images/lowres.png" alt="AC1Tweaker - LOD Patch off" style="margin-top: 1rem;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card-full collapsed">
+                <div class="project-header-full">
+                    <h3>Roblox Parkour & Climbing System</h3>
+                    <button class="expand-btn" aria-expanded="false">▼</button>
+                </div>
+                <div class="project-content">
+                    <p><strong>Technologies:</strong> Lua</p>
+                    <video controls autoplay muted loop poster="assets/videos/poster3.png">
+                        <source src="assets/videos/dive.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <p>
+                        Designed an edge-intersection detection system backed by a bounding volume hierarchy (BVH) for fast environment queries.<br>
+                        Implemented inverse kinematics for climbing, including smooth interpolation between animation and IK-driven limbs.
+                    </p>
+                    <div class="additional-videos">
+                        <!-- Add more videos here -->
+                        <video controls autoplay muted loop poster="assets/videos/poster3-2.png" style="margin-top: 1rem;">
+                            <source src="assets/videos/climbing.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <!-- <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="experience-list">
+                <div class="experience-item">
+                    <h3>Job Title | Company</h3>
+                    <p><strong>Duration:</strong> Jan 2023 - Present</p>
+                    <p>Brief description of what you did, your responsibilities, and achievements.</p>
+                </div>
+                <div class="experience-item">
+                    <h3>Job Title | Company</h3>
+                    <p><strong>Duration:</strong> May 2021 - Dec 2022</p>
+                    <p>Brief description of your previous experience.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Blox. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
